@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    margin-left: 1em;
+}
+
+table{
+    border-spacing: 0;
+}
+
+header{
+    background-color: rgba(8,11,18,255);
+    opacity: 50%;
+    height: 80px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+main{
+    display: flex;
+    height: 96vh;
+}
+
+nav{
+    background-color: rgba(0,0,0,255);
+    width: 250px;
+    height: 96vh;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* header section */
+
+#UPGRADE{
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    border: 2px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+#UPGRADE:hover{
+    font-size: 120%;
+}
+
+/* nav bar */
+
+.s-xs{
+    display: none;
+}
+
+.icon-s{
+    padding: 0.3rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+nav li a img{
+    height: 30px;
+    position: relative;
+    top: 8px;
+}
+
+.nav-opt1{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.nav-opt{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+nav h3{
+    color: white;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#playlist-cr{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    font-size: 120%;
+}
+
+#playlist-cr i{
+    font-size: 300%;
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#playlist li{
+    margin-top: 1rem;
+}
+
+#playlist li a{
+    color: grey;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-left: 0.6rem;
+
+}
+
+#playlist-cr:hover{
+    color: white;
+}
+
+#playlist li a:hover{
+    color: white;
+}
+
+nav a:hover{
+    color: white;
+}
+
+#nav-bottom-ar{
+    margin-left: 1.5rem;
+    margin-bottom: 4vh;
+}
+
+#nav-bottom-ar img{
+    width: 15%;
+    position: relative;
+    top: 15px;
+}
+
+#nav-bottom-ar a{
+    text-decoration: none;
+    color: grey;
+}
+
+#nav-bottom-ar a:hover{
+    color: white;
+}
+
+#nav-bottom-ar hr{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#nav-bottom-ar span{
+    color: white ;
+    font-weight: bolder;
+}
+
+#profile-img-cont{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 50%;
+    background-image: url(../asset/img/profile.svg);
+    background-position: 2px center;
+    background-repeat: no-repeat;
+}
+
+#profile-name{
+    position: relative;
+    bottom: 15px;
+    margin-left: 0.5rem;
+}
+
+
+
+/* main section */
+
+.main-container{
+    background-color: rgba(20,25,34,255);
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    padding-left: 270px;
+    padding-bottom: 60px;
+    padding-right: 40px;
+    overflow: scroll;
+}
+
+.main-container li{
+    display: inline;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.main-container li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.main-container ul li a .border-gr{
+    color: white;
+    margin-left: 0px;
+    margin-bottom: 2px;
+}
+
+.main-container li a:hover .border-gr{
+    border-bottom: 2px solid green;
+}
+
+.main-container ul{
+    text-align: center;
+    line-height: 2rem;
+}
+
+.main-container span{
+    color: grey;
+    margin-left: 2%;
+}
+
+.main-container h2{
+    font-size: 250%;
+    margin-top: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 2%;
+}
+
+.img{
+    width: 100%;
+    background-image: url(../asset/img/metal_lifting.jpg);
+    height: 160px;
+    background-size: cover;
+}
+
+#player-ic{
+    color: white;
+    font-size: 400%;
+    margin-top: 45px;
+    display: none;
+}
+
+.img:hover #player-ic{
+    display: inline-block;
+}
+
+.img:hover{
+    filter: brightness(70%);
+}
+
+.recently-played-cards{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.recently-played-card{
+    text-align: center;
+    margin-left: 2%;
+    width: 160px;
+}
+
+div .p-card-title{
+    color: white;
+    font-size: 130%;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.per-te-cards{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.per-te-cards img{
+    width: 100%;
+}
+
+.per-te-card{
+    text-align: center;
+    margin-left: 2%;
+    width: 160px;
+}
+
+.pop-art-text{
+    flex-basis: 200px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.popular-artists{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.popular-artist{
+    background-image: url(../asset/img/einaudi.jpeg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 200px;
+    background-position: center 2px;
+}
+/* foot menu */
+
+.foot-menu{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(40,40,40,255);
+    z-index: 9999999;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#current-tr{
+    width: 240px;
+    display: flex;
+}
+
+#current-tr img{
+    width: 25%;
+}
+
+#current-tr-text-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+#current-tr-tl{
+    color: white;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+#current-tr-icon{
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+#current-tr-icon a{
+    color: grey;
+    margin-left: 10px;
+}
+
+#current-tr-icon a:hover{
+    color: white;
+}
+
+#play-pause{
+    display: flex;
+    flex-direction: column;
+}
+
+#bar{
+    margin: 0 auto;
+}
+
+#bar-buttons{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#bar-buttons a{
+    color: white;
+    font-size: 200%;
+    margin: 1rem;
+}
+
+#bar-buttons a:nth-child(3){
+    font-size: 300%;
+    position: relative;
+    top: 5px;
+}
+
+
+#play-bar-cont{
+    background-color: grey;
+    display: inline-block;
+    width: 400px;
+    height: 5px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 3px;
+}
+
+#play-bar-cont span{
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    display: block;
+    border-radius: 15px;
+}
+
+#volume{
+    padding-top: 15px;
+}
+
+#volume i{
+    color: white;
+    font-size: 150%;
+    margin: 0.5rem;
+}
+
+#volume div{
+    background-color: grey;
+    display: inline-block;
+    width: 450px;
+    height: 5px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 3px;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+/* medie query */
+
+/* ---------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px){
+    #bar-buttons a{
+        color: white;
+        font-size: 100%;
+        margin: 0.5rem;
+    }
+    
+    #bar-buttons a:nth-child(3){
+        font-size: 200%;
+        position: relative;
+        top: 5px;
+    }
+
+    #volume i {
+        color: white;
+        font-size: 100%;
+        margin: 0.5rem;
+    }
+
+    #play-bar-cont {
+        background-color: grey;
+        display: inline-block;
+        width: 150px;
+        height: 5px;
+        border-radius: 20px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    #volume input{
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #current-tr img {
+        width: 30%;
+        height: 60%;
+        margin-top: 15px;
+    }
+
+    #current-tr-tl {
+        color: white;
+        font-weight: bolder;
+        font-size: 80%;
+    }
+
+    #brano{
+        font-size: 70%;
+    }
+
+    #current-tr-icon {
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    #bar-buttons a:nth-child(3) {
+        font-size: 100%;
+        position: relative;
+        top: 0
+    }
+
+    #bar-buttons a {
+        color: white;
+        font-size: 80%;
+        margin: 0.3rem;
+    }
+
+    #bar span{
+        font-size: 50%;
+    }
+
+    #play-bar-cont {
+        background-color: grey;
+        display: inline-block;
+        width: 50px;
+        height: 5px;
+        border-radius: 20px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    #volume i {
+        color: white;
+        font-size: 50%;
+        margin: 0.3rem;
+    }
+
+    #volume input {
+        width: 50px;
+        position: relative;
+        top: 5px
+    }
+
+    #play-pause {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    #current-tr {
+        width: 150px;
+        display: flex;
+    }
+
+    .xl-m{
+        display: none;
+    }
+
+    nav{
+        width: 75px;
+        padding: 0.5rem;
+    }
+
+    #UPGRADE{
+        font-size: 50%;
+    }
+
+    .s-xs{
+        display: block;
+    }
+
+    .main-container {
+        background-color: rgba(20,25,34,255);
+        width: 100%;
+        height: 100%;
+        padding-top: 90px;
+        padding-left: 90px;
+        padding-bottom: 60px;
+        padding-right: 40px;
+        overflow: scroll;
+    }
+}
